@@ -66,6 +66,7 @@
 
 .viewport
 {
+    position: relative;
     background: #1e2028;
     border-radius: 6px;
     display: grid;
@@ -110,4 +111,25 @@
 {
     width: 100px;
     text-align: right;
+}
+
+.dev_tools_btn
+{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #34467a;
+    color: #c2cbeb;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    width: 90px;
+    height: 24px;
+
+    &:hover
+    {
+        background: #44568b;
+    }
+
+    transition: 0.1s background-color;
 }
