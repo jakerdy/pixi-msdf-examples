@@ -59,7 +59,6 @@ function ConstructV8()
     createEffect(on(v8_mode, v =>
     {
         lbl.forEach((l, i) => l.visible = i === v);
-        lbl[v].visible = true;
     }));
 
     return root;

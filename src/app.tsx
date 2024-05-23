@@ -12,6 +12,7 @@ import { ExampleAA } from "./examples/aa";
 import { InitPixi, apps } from "./utils/init-pixi";
 import { IExampleInfo } from "./examples/interface";
 import { SwitchButton } from "./utils/switch-btn";
+import { DevTools } from "./utils/dev-tools";
 
 export default function App()
 {
@@ -106,13 +107,11 @@ function ExamplesView()
 
     function Controller()
     {
-
         return <Show when={cur().controller}>
             <div class={st.description}>
                 {cur().controller!()}
             </div>
         </Show>;
-
     }
 
     return <div class={st.split_view}>
@@ -128,15 +127,4 @@ function ExamplesView()
             <Description />
         </div>
     </div>
-}
-
-
-function DevTools(opt: { app: any })
-{
-    return <button
-        class={st.dev_tools_btn}
-        onclick={() => (globalThis as any)['__PIXI_APP__'] = opt.app}
-    >
-        Dev Tools
-    </button>
 }

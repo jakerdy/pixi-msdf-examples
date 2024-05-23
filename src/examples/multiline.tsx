@@ -49,7 +49,6 @@ function ConstructV8()
 
 export function ExampleMultiline(): IExampleInfo
 {
-
     function TextED()
     {
         return <>

@@ -138,7 +138,7 @@ function ConstructV8()
         inner.visible = showBody();
     });
 
-    // Swap oder
+    // Swap order
     createEffect(on(before, b => 
     {
         root.removeChild(header);

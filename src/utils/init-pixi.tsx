@@ -2,7 +2,6 @@ import { createSignal } from "solid-js";
 import * as PixiV7 from "pixi.js";
 import * as PixiV8 from "pixi-v8";
 
-
 export async function InitPixi()
 {
     const [ready, setReady] = createSignal(false);
@@ -21,7 +20,6 @@ export async function InitPixi()
     };
 
     await apps.v8.init(pixi_opt);
-
 
     await PixiV7.Assets.load("/msdf/JetBrainsMono-Regular.fnt");
     await PixiV7.Assets.load("/msdf/OpenSans-Regular.fnt");
